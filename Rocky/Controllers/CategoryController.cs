@@ -24,5 +24,11 @@ namespace Rocky.Controllers
             IEnumerable<Category> objList = _db.Category;
             return View(objList);
         }
+
+        //Get - CREATE
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
