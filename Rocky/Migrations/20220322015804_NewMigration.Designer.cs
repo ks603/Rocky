@@ -9,8 +9,8 @@ using Rocky.Data;
 namespace Rocky.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220320013039_addCategoryToDatabase")]
-    partial class addCategoryToDatabase
+    [Migration("20220322015804_NewMigration")]
+    partial class NewMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,6 +19,21 @@ namespace Rocky.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("Rocky.Models.ApplicationType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ApplicationType");
+                });
 
             modelBuilder.Entity("Rocky.Models.Category", b =>
                 {
