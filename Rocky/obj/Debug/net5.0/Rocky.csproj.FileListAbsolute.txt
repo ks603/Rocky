@@ -433,3 +433,4 @@ C:\Users\kevin.shaughnessy\source\repos\Rocky\Rocky\obj\Debug\net5.0\Razor\Views
 C:\Users\kevin.shaughnessy\source\repos\Rocky\Rocky\obj\Debug\net5.0\Razor\Views\Category\Create.cshtml.g.cs
 C:\Users\kevin.shaughnessy\source\repos\Rocky\Rocky\obj\Debug\net5.0\Razor\Views\ApplicationType\Create.cshtml.g.cs
 C:\Users\kevin.shaughnessy\source\repos\Rocky\Rocky\obj\Debug\net5.0\Razor\Views\ApplicationType\Index.cshtml.g.cs
+C:\Users\kevin.shaughnessy\source\repos\Rocky\Rocky\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs
